@@ -18,6 +18,12 @@ consumo de corrente nos terminais: +/- 20mA
 ![fonte: http://mh.nodebb.com](./img/ligacao.jpg)
 
 ## Programação
+Para visualização das informções utilizando o sistema para IoT [Saiot](https://saiot.ect.ufrn.br) basta utilizar o código neste repositório alterando as credenciais presentes no código fonte principal para as mesmas credenciais do sistema da universidade pois o usuário e seus dispositivos compartilham a mesma forma de autenticação.
+
+Com o objetivo de facilitar o uso do sistema  e o desenvolvimento de novos dispositivos foi desenvolvido, pela equipe de sistemas embarcados do projeto, uma biblioteca que pode ser baixada na página do [github](https://github.com/daniellycosta/SaiotDevice)
+
+
+Para detalhes do sistema 
 Para utilizar o sensor é necessário baixar da biblioteca do github e extrair na pasta de bibliotecas da IDE ou do projeto.
 A biblioteca pode ser encontrada no [github da fabricante](https://github.com/MHEtLive/MH-ET-LIVE-max30100)
 
@@ -29,3 +35,5 @@ Neste projeto já estão inclusos a biblioteca e o código fonte foi retirado do
 http://mh.nodebb.com/topic/43/new-heart-rate-sensor-mh-et-live-max30100
 
 https://github.com/MHEtLive/MH-ET-LIVE-max30100
+
+https://saiot.ect.ufrn.br
