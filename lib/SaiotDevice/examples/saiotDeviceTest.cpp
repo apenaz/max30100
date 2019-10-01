@@ -15,9 +15,9 @@
 #define timeToSend 15
 
 WiFiClient espClient;
-SaIoTDeviceLib hidrometro("DeviceTeste","1658881hbc","ricardodev@email.com");
-SaIoTController solenoide("on/off","v.Solenoide","onoff");
-SaIoTSensor medidorAgua("hd01","hidrometro_01","Litros","number");
+SaIoTDeviceLib hidrometro("DeviceTeste","1658881hbc","ricardodev@email.com"); //name,serial,email
+SaIoTController solenoide("on/off","v.Solenoide","onoff"); //key,tag,class
+SaIoTSensor medidorAgua("hd01","hidrometro_01","Litros","number"); //key,tag,unit,type
 String senha = "12345678910";
 void callback(char* topic, byte* payload, unsigned int length);
 
@@ -28,8 +28,8 @@ void setup(){
   hidrometro.addSensor(medidorAgua);
   Serial.begin(115200);
   Serial.println("INICIO");
-  hidrometro.preSetCom(espClient, callback);
-  hidrometro.startDefault(senha);
+  hidrometro.preSetCom(espClient, callback,300);
+  hidrometro.start(senha);
 
 	tDecorrido = millis();
 }

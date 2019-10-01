@@ -7,8 +7,8 @@
 #include "SaIoTController.h"
 #include "SaIoTCom.h"
 
-#define maxSensors 15
-#define maxControllers 15
+#define maxSensors 5
+#define maxControllers 5
 //Params conexão SaIoT server v1.7
 #define HOST "api.saiot.ect.ufrn.br"
 #define hostHttp "http://api.saiot.ect.ufrn.br/v1/device/auth/login"
@@ -70,3 +70,4 @@ public:
   void addController(String _key, String _type, String _tag, String _description, double _min, double _step, double _max);*/
 };
 #endif
+// wip
