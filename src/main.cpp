@@ -127,6 +127,6 @@ void callback(char *topic, byte *payload, unsigned int length)
 void enviarDados()
 {
   String data_hora = SaIoTCom::getDateNow();
-  bpm.sendData(pox.getHeartRate());
-  spo2.sendData(pox.getSpO2());
+  bpm.sendData(pox.getHeartRate(), data_hora);
+  spo2.sendData(pox.getSpO2(), data_hora);
 }
